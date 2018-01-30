@@ -11,7 +11,7 @@ export const self = {
 
 // Handles fetch-like syntax and the case where there is only one object passed-in
 // (which will have the URL as a property). Also serilizes the response.
-export default function http(url, request = {}) {
+export default function  http(url, request = {}) {
   if (typeof url === 'object') {
     request = url
     url = request.url
