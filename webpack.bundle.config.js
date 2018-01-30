@@ -7,6 +7,7 @@ module.exports = deepMerge(
     externals: (ctx, req, next) => {
       next(null, false)
     },
+    devtool: 'inline-source-map',
 
     output: {
       path: path.join(__dirname, 'browser'),

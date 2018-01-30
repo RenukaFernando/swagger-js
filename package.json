@@ -18,7 +18,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack -p --config ./webpack.config.js",
     "build-dev": "cross-env NODE_ENV=development webpack --config ./webpack.config.js",
-    "build-bundle": "cross-env NODE_ENV=production webpack -p --config ./webpack.bundle.config.js",
+    "build-bundle": "cross-env NODE_ENV=development webpack --config ./webpack.bundle.config.js",
     "watch": "webpack --config webpack.config.js --watch --progress",
     "test": "npm run just-test && npm run lint",
     "just-test": "cross-env NODE_ENV=test node ./node_modules/mocha/bin/_mocha --recursive --compilers js:babel-core/register",
